@@ -387,7 +387,8 @@ if [ -n "${BASH_SOURCE:-}" ] && [ -f "${BASH_SOURCE[0]}" ]; then
 fi
 CANDIDATE=""
 if [ -n "$SCRIPT_DIR" ]; then
-    for name in grib_downloader.sh grib_downloader_v2_23.sh; do
+    for name in grib_downloader.sh; do
+   # for name in grib_downloader.sh grib_downloader_v2_23.sh; do
         [ -f "$SCRIPT_DIR/$name" ] && { CANDIDATE="$SCRIPT_DIR/$name"; break; }
     done
 else
